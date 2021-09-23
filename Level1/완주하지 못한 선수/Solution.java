@@ -5,7 +5,7 @@ class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
         
-        // 배열 정렬
+      	        // 배열 정렬
 		Arrays.sort(participant);
 		Arrays.sort(completion);
 
