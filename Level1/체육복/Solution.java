@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
-        int answer = 0; // 체육복을 빌린 학생 수
+       		int answer = 0; // 체육복을 빌린 학생 수
 
 		Arrays.sort(lost);
 		Arrays.sort(reserve);
