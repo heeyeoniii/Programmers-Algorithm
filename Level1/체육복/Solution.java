@@ -4,8 +4,8 @@ class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = 0; // 체육복을 빌린 학생 수
 
-		    Arrays.sort(lost);
-	    	Arrays.sort(reserve);
+		Arrays.sort(lost);
+		Arrays.sort(reserve);
 
 		// 여벌 체육복이 있는 학생들이 도난당했을 경우
 		for (int i = 0; i < lost.length; i++) {
@@ -26,7 +26,9 @@ class Solution {
 					reserve[j] = -1;
 				}
 			}
-		}        
-        return n - lost.length + answer;   
+		}
+        
+        return n - lost.length + answer;
+        
     }
 }
