@@ -7,15 +7,15 @@ class Solution {
         
         Set<Integer> set = new HashSet<>(); 
 
-		for (int i = 0; i < nums.length; i++) {
-			set.add(nums[i]);
-		}
+	for (int i = 0; i < nums.length; i++) {
+		set.add(nums[i]);
+	}
 		
-		if(set.size() >= nums.length / 2) {
-			answer = nums.length / 2;
-		} else {
-			answer = set.size();
-		}
+	if(set.size() >= nums.length / 2) {
+		answer = nums.length / 2;
+	} else {
+		answer = set.size();
+	}
         
         return answer;
     }
