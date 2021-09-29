@@ -8,7 +8,7 @@ class Solution {
 	int days = 0;
 
 	for (int i = 0; i < a - 1; i++) {
-		days += months[i];
+             days += months[i];
 	}
 
 	days += b - 1;
