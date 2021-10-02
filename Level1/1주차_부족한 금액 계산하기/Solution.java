@@ -5,16 +5,15 @@ class Solution {
         int num = 1;
         
         for (int i = 0; i < count; i++) {
-			realPrice += num * price;
-			num++;
-			continue;
-		}
+		realPrice += num * price;
+		num++;
+		continue;
+	}
         
         answer = realPrice - money;
         if(money > realPrice) {
             answer = 0;
         }
-
         return answer;
     }
 }
