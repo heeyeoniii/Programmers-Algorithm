@@ -24,7 +24,6 @@ public class Solution {
 
 					avg = (double) (sum + scores[i][i]) / scores.length;
 				}
-				System.out.println(avg);
 
 			}
 
