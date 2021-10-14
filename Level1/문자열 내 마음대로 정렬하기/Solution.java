@@ -1,11 +1,10 @@
-public class Solution {
+import java.util.Arrays;
+import java.util.Comparator;
 
-	public static void main(String[] args) {
-
-		String[] strings = { "sun", "bed", "car" };
-		int n = 1;
-
-		Arrays.sort(strings, new Comparator<String>() {
+class Solution {
+    public String[] solution(String[] strings, int n) {
+        
+        Arrays.sort(strings, new Comparator<String>() {
 
 			@Override
 			public int compare(String s1, String s2) {
@@ -20,10 +19,7 @@ public class Solution {
 			}
 
 		});
-
-		for (int i = 0; i < strings.length; i++) {
-			System.out.println(strings[i]);
-		}
-
-	}
+        
+        return strings;
+    }
 }
