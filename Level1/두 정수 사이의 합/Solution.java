@@ -3,14 +3,14 @@ class Solution {
         long answer = 0;
         
         if (a <= b) {
-			for (int i = a; i <= b; i++) {
-				answer += i;
-			}
-		} else {
-			for (int i = b; i <= a; i++) {
-				answer += i;
-			}
+		for (int i = a; i <= b; i++) {
+			answer += i;
 		}
+	} else {
+		for (int i = b; i <= a; i++) {
+			answer += i;
+		}
+	}
         
         return answer;
     }
