@@ -1,11 +1,10 @@
-public class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-	public static void main(String[] args) {
-
-		int[] arr = { 3, 2, 6 };
-		int divisor = 10;
-
-		List<Integer> list = new ArrayList<>();
+class Solution {
+    public int[] solution(int[] arr, int divisor) {
+        List<Integer> list = new ArrayList<>();
 
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] % divisor == 0) {
@@ -23,12 +22,8 @@ public class Solution {
 			answer[i] = list.get(i);
 
 		}
-
-		Arrays.sort(answer);
-
-		for (int num : answer) {
-			System.out.print(num + " ");
-		}
-
-	}
+        Arrays.sort(answer);
+        
+        return answer;
+    }
 }
