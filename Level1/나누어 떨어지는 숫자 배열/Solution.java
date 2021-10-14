@@ -20,8 +20,8 @@ class Solution {
 
 		for (int i = 0; i < list.size(); i++) {
 			answer[i] = list.get(i);
-
 		}
+	    
         Arrays.sort(answer);
         
         return answer;
